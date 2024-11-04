@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grid Concept </title>
+
+    <style>
+    .container {
+        display: grid;
+        height: 500px;
+        grid-template-columns: 0.7fr 3fr 0.5fr;
+        grid-template-rows: 0.7fr 1.9fr 0.6fr;
+        grid-template-areas: "nav nav nav"
+                              "sidebox main sidebox2"
+                              "sidebox footer footer";
+        gap: 8px;    
+        text-align: center;  
+        font-size: 22px;  
+        color: white;             
+        
+    }
+    
+    nav {
+        background-color: rgb(156, 214, 56);
+        grid-area: nav;
+    }
+    
+    .sidebox {
+        background-color: rgb(156, 214, 56);
+        grid-area: sidebox;
+    }
+    
+    .main {
+        background-color: rgb(156, 214, 56);
+        grid-area: main;
+    }
+    
+    .sidebox2 {
+        background-color: rgb(156, 214, 56);
+        grid-area: sidebox2;
+    }
+    
+    footer {
+        background-color: rgb(156, 214, 56);
+        grid-area: footer;
+    }
+   </style>
+</head>
+
+<body style="height: 300px;">
+
+    <div class="container">
+        <nav> Navbar </nav>
+        <div class="sidebox"> SideBar </div>
+        <div class="main"> Main </div>
+        <div class="sidebox2"> SideBar </div>
+        <footer> Footer </footer>
+    </div>
+
+</body>
+</html>
